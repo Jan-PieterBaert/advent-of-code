@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+number=$(("$1"))
+# Copy the inputfile to where it belongs
+cp $inputfile day_$number/input.$number
+cd "day_$number"
+
+# Compile the rust code
+file="$number.rs"
+rustc $file -o run
