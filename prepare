@@ -2,7 +2,7 @@
 
 number=$(("$1"))
 # Copy the inputfile to where it belongs
-cp $inputfile day_$number/input.$number
+cp $3 day_$number/input.$number
 cd "day_$number"
 
 # Compile the rust code
